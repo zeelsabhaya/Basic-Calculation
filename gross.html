@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let baseSalary = parseInt(prompt("Enter your base salary in RS:"));
+
+        let hraPercentage = parseInt(prompt("Enter the HRA percentage:"));
+        let daPercentage = parseInt(prompt("Enter the DA percentage:"));
+        let taPercentage = parseInt(prompt("Enter the TA percentage:"));
+
+        let hra = (hraPercentage / 100) * baseSalary;
+        let da = (daPercentage / 100) * baseSalary;
+        let ta = (taPercentage / 100) * baseSalary;
+
+        let grossSalary = baseSalary + hra + da + ta;
+
+        console.log( "Base Salary:",baseSalary,"RS");
+
+        console.log("Gross Salary",grossSalary,"RS");
+    </script>
+</body>
+</html>
